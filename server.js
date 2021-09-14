@@ -9,7 +9,10 @@ const PORT = process.env.PORT;
 
 
 
-
+app.get('/',(req,res)=>
+{
+     res.status(200).send('deployed');
+});
 
 
 
