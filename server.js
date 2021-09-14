@@ -64,7 +64,7 @@ let handleMovies = async (req,res)=>{
             return new Movie (item.title,item.overview,item.vote_average,item.vote_count,item.image_url,item.popularity,item.release_date);
         });
          
-        console.log(moviesData.data);
+       
           res.status(200).json(cleaneData);
 
     }
