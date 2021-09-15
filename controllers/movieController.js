@@ -25,7 +25,8 @@ let handleMovies = async (req,res)=>{
          
        
           //res.status(200).json(cleaneData);
-          res.status(200).send(JSON.stringify(cleaneData));
+          res.status(200).json(cleaneData);
+
 
     }
     else {
