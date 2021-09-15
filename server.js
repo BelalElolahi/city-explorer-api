@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 
 app.get('/',(req,res)=>
 {
-     res.status(200).send('deployed');
+     res.status(200).json('deployed');
 });
 
 

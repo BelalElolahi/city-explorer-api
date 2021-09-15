@@ -1,5 +1,6 @@
 "use strict"
- const ForCast = require('../Data/Wether');
+
+ const Weather = require('../Data/Weather');
  const axios = require('axios');
  require('dotenv').config();
 
@@ -21,12 +22,13 @@ let handleWeather = async (req,res)=>{
         
       
         let cleaneData = weatherData.data.map(item =>{
-            return new ForCast (item.datetime,item.weather.description);
+            return new Weather (item.datetime,item.weather.description);
         });
          
         console.log(weatherData.data);
           //res.status(200).json(cleaneData);
-          res.status(200).send(JSON.stringify(cleaneData));
+          
+          res.status(200).json(cleaneData);
 
     }
     else {
