@@ -36,7 +36,8 @@ let handleWeather = async (req,res)=>{
         });
          
         console.log(weatherData.data);
-          res.status(200).json(cleaneData);
+          //res.status(200).json(cleaneData);
+          res.status(200).send(JSON.stringify(cleaneData));
 
     }
     else {
@@ -68,7 +69,8 @@ let handleMovies = async (req,res)=>{
         });
          
        
-          res.status(200).json(cleaneData);
+          //res.status(200).json(cleaneData);
+          res.status(200).send(JSON.stringify(cleaneData));
 
     }
     else {

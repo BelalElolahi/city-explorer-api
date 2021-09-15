@@ -15,6 +15,11 @@ valid_date with description .
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 URL : 
 
+http://localhost:8000/movies/?searchQuery=seattle
+
+http://localhost:8000//weather?city=""&key=""&lat=""&lon=""
+
+
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
