@@ -11,6 +11,11 @@
 const PORT = process.env.PORT;
 
 
+app.get('/test',(req,res)=>
+{
+     res.status(200).json('testroute');
+});
+
 
 app.get('/',(req,res)=>
 {
